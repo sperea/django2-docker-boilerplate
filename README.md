@@ -7,7 +7,7 @@ A boilerplate for Django - Docker web applications
 
 docker-compose run web python3 manage.py migrate
 
-### Start srvice containers
+### Start service containers
 
 docker-compose up
 
