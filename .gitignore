@@ -104,4 +104,4 @@ venv.bak/
 .mypy_cache/
 
 # Dependency JS directory
-node_modules/
+web/static/bootstrap4/node_modules/
