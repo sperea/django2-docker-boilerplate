@@ -19,12 +19,13 @@ from django.views.generic.base import TemplateView
 from django.views.static import serve
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('robots\.txt', TemplateView.as_view(template_name='robots.txt',
                                             content_type='text/plain')),
-    path(r'^img/(?P<path>.*)$', serve, {
+    url(r'^img/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT,
         'show_indexes': True
     }),
